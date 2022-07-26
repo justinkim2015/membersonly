@@ -1,0 +1,14 @@
+<h1>Sign up!</h1>
+
+<%= form_with model: @user do |form| %>
+  <%= form.label :username %>
+  <%= form.text_field :username, placeholder: "username" %>
+
+  <%= form.label :password %>
+  <%= form.text_field :password, placeholder: "password" %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email, placeholder: "email" %>
+
+  <%= form.submit 'Sign up!' %>
+<% end  %>
